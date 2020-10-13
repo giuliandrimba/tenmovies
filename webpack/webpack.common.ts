@@ -45,6 +45,7 @@ const config = {
     extensions: [".tsx", ".ts", ".js"],
     alias: {
       Assets: isProduction ? path.resolve(rootDir, 'src/assets/') : path.resolve(rootDir, 'src/assets/'),
+      src: isProduction ? path.resolve(rootDir, 'src') : path.resolve(rootDir, 'src'),
     }
   },
   plugins: [

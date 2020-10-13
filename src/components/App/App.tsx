@@ -1,6 +1,8 @@
 import React from 'react';
-import Logo from 'Assets/image/alfa.jpg'
-import { GlobalStyle } from './styled';
+import { BrowserRouter } from 'react-router-dom';
+import img from 'Assets/image/alfa.jpg'
+import { GlobalStyle, Logo } from './styled';
+import Router from '../../routes/Router'
 
 export type AppContextType = {};
 
@@ -12,7 +14,10 @@ export default () => {
     <AppContext.Provider value={context}>
       <GlobalStyle />
       <h1>Alfa APP</h1>
-      <img src={Logo} />
+      <Logo src={img} />
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
     </AppContext.Provider>
   )
 }
