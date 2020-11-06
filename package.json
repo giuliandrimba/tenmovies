@@ -44,6 +44,7 @@
     "html-webpack-tags-plugin": "^2.0.17",
     "imagemin-webpack-plugin": "^2.4.2",
     "lodash": "^4.17.20",
+    "polished": "^4.0.3",
     "prettier": "^2.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

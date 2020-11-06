@@ -1,8 +1,10 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import img from 'Assets/image/alfa.jpg'
 import { GlobalStyle, Logo } from './styled';
 import Router from '../../routes/Router'
+import { ThemeProvider } from 'styled-components';
+import {defaultTheme} from '../../data/style/theme/default'
+import Header from '../organisms/Header';
 
 export type AppContextType = {};
 
@@ -10,14 +12,16 @@ export const AppContext = React.createContext<AppContextType>({});
 
 export default () => {
   const context = {};
+  const theme: any = defaultTheme;
   return (
     <AppContext.Provider value={context}>
-      <GlobalStyle />
-      <h1>Alfa APP</h1>
-      <Logo src={img} />
-      <BrowserRouter>
-        <Router />
-      </BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <Header />
+        <BrowserRouter>
+          <Router />
+        </BrowserRouter>
+      </ThemeProvider>
     </AppContext.Provider>
   )
 }
