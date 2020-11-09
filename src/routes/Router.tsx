@@ -7,6 +7,7 @@ export default () => {
     <Switch>
       {routes.map((route: any, i) => (
         <Route
+          exact
           path={route.path}
           key={i}
           render={props => (

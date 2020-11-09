@@ -14,14 +14,14 @@ export default () => {
   const context = {};
   const theme: any = defaultTheme;
   return (
-    <AppContext.Provider value={context}>
-      <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        <Header />
-        <BrowserRouter>
-          <Router />
-        </BrowserRouter>
-      </ThemeProvider>
-    </AppContext.Provider>
+    <BrowserRouter>
+      <AppContext.Provider value={context}>
+        <ThemeProvider theme={theme}>
+          <GlobalStyle />
+            <Header />
+            <Router />
+        </ThemeProvider>
+      </AppContext.Provider>
+    </BrowserRouter>
   )
 }

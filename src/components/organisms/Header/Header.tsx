@@ -1,10 +1,12 @@
 import React from 'react';
-import { Header, LogoStyled } from './styled';
+import { Header, LogoStyled, MenuWrapper } from './styled';
+import Menu from '../Menu'
 
-export default () => {
+export default (props: any) => {
   return (
-    <Header>
+    <Header className={props.className}>
       <LogoStyled />
+      <MenuWrapper />
     </Header>
   )
 }
