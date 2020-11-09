@@ -3,7 +3,7 @@ import { Container, SVG } from './styled';
 
 export default (props: any) => {
   return (
-    <Container className={props.className}>
+    <Container to="/" className={props.className}>
       <SVG viewBox="0 0 709 95">
           <g id="Branding" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
               <g id="Tablet" transform="translate(-164.000000, -330.000000)" fill="#000000">
