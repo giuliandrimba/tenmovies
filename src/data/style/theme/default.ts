@@ -3,12 +3,12 @@ import { Spacing } from '../Spacing';
 
 export const defaultTheme = {
   font: {
-    heading: 'Bodoni',
-    body: 'Gotham',
+    heading: 'BodoniBook',
+    body: 'GothamMedium',
   },
-  color :{
+  color: {
     white: '#FFFFFF',
-    black: '#000000'
+    black: '#000000',
   },
   spacing: {
     s01: '0.8rem',
@@ -26,5 +26,5 @@ export const defaultTheme = {
       [Spacing.M]: '6.4rem',
       [Spacing.S]: '4rem',
     },
-  }
+  },
 } as const;

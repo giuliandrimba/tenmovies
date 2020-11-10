@@ -1,6 +1,30 @@
 @font-face {
-   font-family: 'HelveticaNeueBold';
-   src: url('~Assets/fonts/HelveticaNeue-Bold.woff') format('woff');
-   font-weight: 700;
-   font-style: normal;
- }
+  font-family: 'HelveticaNeueBold';
+  src: url('~Assets/fonts/HelveticaNeue-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BodoniBook';
+  src: url('~Assets/fonts/Bodoni-Book.woff') format('woff');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamBook';
+  src: url('~Assets/fonts/Gotham-Book.woff') format('woff');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamLightItalic';
+  src: url('~Assets/fonts/Gotham-LightItalic.woff') format('woff');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamMedium';
+  src: url('~Assets/fonts/Gotham-Medium.woff') format('woff');
+  font-style: normal;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import routes from './routes';
+import { Container } from './styled';
 
 export default () => {
   return (
@@ -11,7 +12,9 @@ export default () => {
           path={route.path}
           key={i}
           render={props => (
-            <route.component {...props} />
+            <Container>
+              <route.component {...props} />
+            </Container>
           )}
         />
       ))}
